@@ -1,0 +1,146 @@
+<div class="example-config">
+  <button kendo-button (click)="pdf.saveAs('invoice.pdf')">
+    Save As PDF...
+  </button>
+</div>
+
+<kendo-pdf-export #pdf paperSize="A4" margin="0.5cm">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        VIN
+      </div>
+      <div
+        class="col-4"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        LGX12345678
+      </div>
+      <div
+        class="col-2"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        Odometer
+      </div>
+      <div
+        class="col-5"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        12 KM
+      </div>
+      <div
+        class="col-1"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        Date
+      </div>
+      <div
+        class="col-4"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        19/12/2023
+      </div>
+      <div
+        class="col-2"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        Model
+      </div>
+      <div
+        class="col-5"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        Song Plus
+      </div>
+    </div>
+
+    <div class="row"></div>
+
+    <div class="row">
+      <div
+        class="col"
+        style="
+          border: 2px solid;
+          padding: 10px;
+          border-radius: 1px;
+          text-align: center;
+        "
+      >
+        <strong>Outside-apperance(abnormal describe next page)</strong>
+      </div>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <div
+        class="col-2"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        Charging Port
+      </div>
+      <div
+        class="col-10"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        COMPLETE
+      </div>
+      <div
+        class="col-2"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        Painting
+      </div>
+      <div
+        class="col-10"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        No Visible Damage
+      </div>
+      <div
+        class="col-2"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        Rust
+      </div>
+      <div
+        class="col-10"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        No Visible Damage
+      </div>
+      <div
+        class="col-2"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        Crash
+      </div>
+      <div
+        class="col-10"
+        style="border: 2px solid; padding: 10px; border-radius: 1px"
+      >
+        No Visible Damage
+      </div>
+    </div>
+
+    <div class="row">
+      <div
+        class="col"
+        style="
+          border: 2px solid;
+          padding: 10px;
+          border-radius: 1px;
+          text-align: left;
+        "
+      >
+        <strong>Description: Dirty vehicule</strong>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <img src="" alt="Auto Image" />
+      </div>
+    </div>
+  </div>
+</kendo-pdf-export>
